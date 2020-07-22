@@ -61,8 +61,20 @@ namespace UserRegistrationApp
             bool isValid = user.validateMobileNo("91 4456830064");
             Assert.IsTrue(isValid);
         }
-
-
+        [Test]
+        public void givenPassword_WhenProper_ShouldReturnTrue()
+        {
+            UserRegistration user = new UserRegistration();
+            bool isValid = user.validatePassword("Abcdkje8");
+            Assert.IsTrue(isValid);
+        }
+        [Test]
+        public void givenPassword_WhenNotProper_ShouldReturnTrue()
+        {
+            UserRegistration user = new UserRegistration();
+            bool isValid = user.validatePassword("dcgv4");
+            Assert.IsFalse(isValid);
+        }
 
 
 
