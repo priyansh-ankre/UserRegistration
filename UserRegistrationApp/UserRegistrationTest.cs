@@ -62,17 +62,31 @@ namespace UserRegistrationApp
             Assert.IsTrue(isValid);
         }
         [Test]
-        public void givenPassword_WhenProper_ShouldReturnTrue()
+        public void givenPassword_WhenProperForLengthUpperCaseNumericValue_ShouldReturnTrue()
         {
             UserRegistration user = new UserRegistration();
-            bool isValid = user.validatePassword("Abcdkje8");
+            bool isValid = user.validatePassword("Abecdkje8");
             Assert.IsTrue(isValid);
         }
         [Test]
-        public void givenPassword_WhenNotProperFor8Characters_ShouldReturnTrue()
+        public void givenPassword_WhenNotProperForLength_ShouldReturnTrue()
         {
             UserRegistration user = new UserRegistration();
-            bool isValid = user.validatePassword("dcgv4");
+            bool isValid = user.validatePassword("dcGv4");
+            Assert.IsFalse(isValid);
+        }
+        [Test]
+        public void givenPassword_WhenNotProperForUpperCase_ShouldReturnTrue()
+        {
+            UserRegistration user = new UserRegistration();
+            bool isValid = user.validatePassword("dcgv4abce");
+            Assert.IsFalse(isValid);
+        }
+        [Test]
+        public void givenPassword_WhenNotProperForNumericValue_ShouldReturnTrue()
+        {
+            UserRegistration user = new UserRegistration();
+            bool isValid = user.validatePassword("dcgvWabce");
             Assert.IsFalse(isValid);
         }
     }
