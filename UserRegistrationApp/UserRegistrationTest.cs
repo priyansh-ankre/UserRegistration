@@ -54,7 +54,13 @@ namespace UserRegistrationApp
             bool isValid = user.validateEmail("abc123@.com");
             Assert.IsFalse(isValid);
         }
-
+        [Test]
+        public void givenMobileNo_WhenProper_ShouldReturnTrue()
+        {
+            UserRegistration user = new UserRegistration();
+            bool isValid = user.validateMobileNo("91 4456830064");
+            Assert.IsTrue(isValid);
+        }
 
 
 
