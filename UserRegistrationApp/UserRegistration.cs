@@ -63,5 +63,19 @@ namespace UserRegistrationApp
                 return false;
             }
         }
+
+        public static string PASSWORD_REGEX = "^[A-Za-z0-9]{8,}$";
+
+        public bool validatePassword(string pass)
+        {
+            if (Regex.IsMatch(pass, PASSWORD_REGEX))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
     }
 }
