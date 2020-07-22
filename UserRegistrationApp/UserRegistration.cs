@@ -19,6 +19,19 @@ namespace UserRegistrationApp
                 return false;
             }
         }
-        
+
+        public static string LAST_NAME_REGEX = "^[A-Z]{1}[A-Za-z]{2,}$";
+        public bool validLastName(string lname)
+        {
+            if (Regex.IsMatch(lname, LAST_NAME_REGEX))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
     }
 }
