@@ -62,10 +62,10 @@ namespace UserRegistrationApp
             Assert.IsTrue(isValid);
         }
         [Test]
-        public void givenPassword_WhenProperForLengthUpperCaseNumericValue_ShouldReturnTrue()
+        public void givenPassword_WhenProperForLengthUpperCaseNumericValueSpecialCharacter_ShouldReturnTrue()
         {
             UserRegistration user = new UserRegistration();
-            bool isValid = user.validatePassword("Abecdkje8");
+            bool isValid = user.validatePassword("abcdE$fgh9");
             Assert.IsTrue(isValid);
         }
         [Test]

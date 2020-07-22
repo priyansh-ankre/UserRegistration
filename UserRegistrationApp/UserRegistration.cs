@@ -64,7 +64,7 @@ namespace UserRegistrationApp
             }
         }
 
-        public static string PASSWORD_REGEX = "(?=.*[0-9])(?=.*[A-Z]).{8,}$";
+        public static string PASSWORD_REGEX = "^([a-zA-Z0-9])*[!@#$%^&*]{1}([a-zA-Z0-9])*$";
 
         public bool validatePassword(string pass)
         {
