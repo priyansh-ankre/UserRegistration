@@ -50,5 +50,18 @@ namespace UserRegistrationApp
             }
         }
 
+        public static string MOBILE_NO_REGEX = "^+[1-9]{2}[: :][0-9]{10}$";
+
+        public bool validateMobileNo(string mobNo)
+        {
+            if (Regex.IsMatch(mobNo, MOBILE_NO_REGEX))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
     }
 }
