@@ -69,14 +69,11 @@ namespace UserRegistrationApp
             Assert.IsTrue(isValid);
         }
         [Test]
-        public void givenPassword_WhenNotProper_ShouldReturnTrue()
+        public void givenPassword_WhenNotProperFor8Characters_ShouldReturnTrue()
         {
             UserRegistration user = new UserRegistration();
             bool isValid = user.validatePassword("dcgv4");
             Assert.IsFalse(isValid);
         }
-
-
-
     }
 }
