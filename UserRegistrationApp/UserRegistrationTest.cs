@@ -33,6 +33,30 @@ namespace UserRegistrationApp
             bool isValid = user.validLastName("ankre");
             Assert.IsFalse(isValid);
         }
+        [Test]
+        public void givenEmail_WhenProper_ShouldReturnTrue()
+        {
+            UserRegistration user = new UserRegistration();
+            bool isValid = user.validateEmail("abc@yahoo.com");
+            Assert.IsTrue(isValid);
+        }
+        [Test]
+        public void givenEmail_WhenProperWithOptionPart_ShouldReturnTrue()
+        {
+            UserRegistration user = new UserRegistration();
+            bool isValid = user.validateEmail("abc-100@yahoo.com");
+            Assert.IsTrue(isValid);
+        }
+        [Test]
+        public void givenEmail_WhenNotProper_ShouldReturnTrue()
+        {
+            UserRegistration user = new UserRegistration();
+            bool isValid = user.validateEmail("abc123@.com");
+            Assert.IsFalse(isValid);
+        }
+
+
+
 
 
 
