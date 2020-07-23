@@ -1,0 +1,13 @@
+C:\Users\hp\source\repos\FellowShipDay2\UserRegistration\bin\Debug\netcoreapp3.1\UserRegistration.exe
+C:\Users\hp\source\repos\FellowShipDay2\UserRegistration\bin\Debug\netcoreapp3.1\UserRegistration.deps.json
+C:\Users\hp\source\repos\FellowShipDay2\UserRegistration\bin\Debug\netcoreapp3.1\UserRegistration.runtimeconfig.json
+C:\Users\hp\source\repos\FellowShipDay2\UserRegistration\bin\Debug\netcoreapp3.1\UserRegistration.runtimeconfig.dev.json
+C:\Users\hp\source\repos\FellowShipDay2\UserRegistration\bin\Debug\netcoreapp3.1\UserRegistration.dll
+C:\Users\hp\source\repos\FellowShipDay2\UserRegistration\bin\Debug\netcoreapp3.1\UserRegistration.pdb
+C:\Users\hp\source\repos\FellowShipDay2\UserRegistration\obj\Debug\netcoreapp3.1\UserRegistration.csprojAssemblyReference.cache
+C:\Users\hp\source\repos\FellowShipDay2\UserRegistration\obj\Debug\netcoreapp3.1\UserRegistration.AssemblyInfoInputs.cache
+C:\Users\hp\source\repos\FellowShipDay2\UserRegistration\obj\Debug\netcoreapp3.1\UserRegistration.AssemblyInfo.cs
+C:\Users\hp\source\repos\FellowShipDay2\UserRegistration\obj\Debug\netcoreapp3.1\UserRegistration.csproj.CoreCompileInputs.cache
+C:\Users\hp\source\repos\FellowShipDay2\UserRegistration\obj\Debug\netcoreapp3.1\UserRegistration.dll
+C:\Users\hp\source\repos\FellowShipDay2\UserRegistration\obj\Debug\netcoreapp3.1\UserRegistration.pdb
+C:\Users\hp\source\repos\FellowShipDay2\UserRegistration\obj\Debug\netcoreapp3.1\UserRegistration.genruntimeconfig.cache
